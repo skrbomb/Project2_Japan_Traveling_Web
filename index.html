@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hants">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日本旅遊</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/富士山2.jpg" alt="fuji mount'" />
+    <header>
+      <section class="logo">
+        <img src="./images/網站Logo.svg" alt="網站logo" />
+        <h1>2024日本旅遊推薦指南</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-plane"></i> 日本旅遊</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-right-to-bracket"></i> 會員登入</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i> 預約行程</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-envelope"></i> 聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="bg-img">
+        <div class="filter"></div>
+        <h3>
+          黃金周假期 <br />為您還有家人安排一趟輕日本旅遊 <br />體驗最平凡的感動
+        </h3>
+      </section>
+      <section class="info-circles">
+        <h3>熱門景點&知名美食</h3>
+        <div class="circles">
+          <div class="circle">
+            <img
+              title="北海道滑雪勝地"
+              src="./images/北海道雪景.jpg"
+              alt="北海道雪景"
+            />
+            <p>北海道雪景美不勝收</p>
+          </div>
+          <div class="circle">
+            <img
+              title="東石漁港壽司"
+              src="./images/日本壽司.jpg"
+              alt="日本壽司"
+            />
+            <p>東石漁港最新鮮的壽司</p>
+          </div>
+          <div class="circle">
+            <img title="富士山雪景" src="./images/富士山.jpg" alt="富士山" />
+            <p>遠眺富士山雪景</p>
+          </div>
+          <div class="circle">
+            <img
+              title="百年古蹟清水寺"
+              src="./images/清水寺.jpg"
+              alt="清水寺"
+            />
+            <p>京都必去百年清水寺</p>
+          </div>
+        </div>
+      </section>
+      <section class="empty-container">
+        <h3>立即規劃行程 享受早鳥優惠</h3>
+      </section>
+      <section class="google-map">
+        <h3>在google map上探索你中意的景點</h3>
+        <p>
+          日本列島地處亞洲東部太平洋中，東西狹長，跨越亞寒帶和亞熱帶。日本四季分明，自然環境優美，旅遊資源豐富。<br />日本的主要旅遊城市有東京、大阪、京都、橫濱、鐮倉、名古屋、奈良、神戶、廣島、福岡、北海道、沖繩等地。<br />著名旅遊風景區和溫泉地有富士山、箱根、伊豆半島、日光、草津、南紀白濱、別府等地。
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6660298.463355505!2d134.48277294198397!3d35.402800050427736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2z5pel5pys5p2x5Lqs6YO9!5e0!3m2!1szh-TW!2stw!4v1711437941679!5m2!1szh-TW!2stw"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <section class="logo">
+        <img src="./images/網站Logo.svg" alt="logo" />
+        <h3>2024日本旅遊推薦指南</h3>
+      </section>
+      <section class="links">
+        <a href="#"
+          ><img title="facebook頁面" src="./Icons/facebook.svg" alt="facebook"
+        /></a>
+        <a href="#"
+          ><img
+            title="instagram頁面"
+            src="./Icons/instagram.svg"
+            alt="instagram"
+        /></a>
+        <a href="#"
+          ><img title="twitter頁面" src="./Icons/twitter.svg" alt="twitter"
+        /></a>
+        <a href="#"
+          ><img title="youtube頁面" src="./Icons/youtube.svg" alt="youtube"
+        /></a>
+      </section>
+    </footer>
+    <script>
+      setInterval(() => {
+        let carouselImg = document.querySelector(".bg-img");
+        if (
+          carouselImg.style.backgroundImage === 'url("../images/日本櫻花.jpg")'
+        ) {
+          carouselImg.style.backgroundImage = 'url("../images/京都古城.jpg")';
+        } else if (
+          carouselImg.style.backgroundImage === 'url("../images/京都古城.jpg")'
+        ) {
+          carouselImg.style.backgroundImage = 'url("../images/大阪街頭.jpg")';
+        } else {
+          carouselImg.style.backgroundImage = 'url("../images/日本櫻花.jpg")';
+        }
+      }, 2000);
+    </script>
+  </body>
+</html>
